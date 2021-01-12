@@ -1,2 +1,10 @@
 config:
   azure:location: australiaeast
+  hello-pulumi:location: australiasoutheast
+  hello-pulumi:data:
+    active: true
+    nums:
+    - 1
+    - 2
+    - 3
+  hello-pulumi:resourcesName: pulumi
