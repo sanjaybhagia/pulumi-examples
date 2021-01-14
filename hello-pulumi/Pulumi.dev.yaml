@@ -1,10 +1,12 @@
 config:
   azure:location: australiaeast
-  hello-pulumi:location: australiasoutheast
   hello-pulumi:data:
     active: true
     nums:
     - 1
     - 2
     - 3
+  hello-pulumi:location: australiasoutheast
+  hello-pulumi:mySecretKey:
+    secure: AAABAFybCK/w34qectPQHPWSoivUhG7uI5//y7Xqc/6Cczh3k3Yi35zvrk+U
   hello-pulumi:resourcesName: pulumi

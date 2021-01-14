@@ -21,9 +21,14 @@ class MyStack : Stack
         Pulumi.Log.Info($"location:{location}");
 
         // Fetch Structured Configuration
-        var data = config.RequireObject<JsonElement>("data");
-        Pulumi.Log.Info($"Active: {data.GetProperty("active")}");
-        Pulumi.Log.Info($"Nums[2] number?: {data.GetProperty("nums")[2]}");
+        //var data = config.RequireObject<JsonElement>("data");
+        //Pulumi.Log.Info($"Active: {data.GetProperty("active")}");
+        //Pulumi.Log.Info($"Nums[2] number?: {data.GetProperty("nums")[2]}");
+        //Pulumi.Log.Info($"mySecretKey: {config.Require("mySecretKey")}");
+
+        Pulumi.Log.Info($"normalKey: {config.Require("normalKey")}");
+        Pulumi.Log.Info($"secretKey: {config.Require("secertKey")}");
+
 
         // Create an Azure Resource Group
         var resourcesName = config.Require("resourcesName");

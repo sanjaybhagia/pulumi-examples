@@ -1,0 +1,7 @@
+encryptionsalt: v1:kzMeo+6TKLw=:v1:XYGt7MbrFMSOzIqs:mv6GPv9gDJPgJ04vN0P8YhvpKUJx5w==
+config:
+  hello-pulumi:normalKey: normalValue
+  hello-pulumi:secertKey:
+    secure: v1:iOxOv5TqdSN2PSn1:SanQI+B6b0+/4Fp4Vs9BQ/u4IgMKrGIywQ==
+  hello-pulumi:location: australiasoutheast
+  hello-pulumi:resourcesName: pulumi
